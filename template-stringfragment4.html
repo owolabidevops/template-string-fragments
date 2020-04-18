@@ -1,0 +1,30 @@
+<html>
+<body>
+<script>
+const beer={
+  name:'belaian wit',
+  brewery: 'steam whistle Brewery',
+  keyword:['pale','cloudy','spiced','crisp']
+ 
+};
+ function renderkeywords(keywords){
+     return`
+     <ul>
+     ${keywords.map(keyword =>`<li> ${keyword}</li>`).join('')}
+     
+     `;
+ }
+const markup =`
+<div class "beer">
+<h2>${beer.name}</h2>
+<p class="brewery">${beer.brewery}</p>
+${renderkeywords(beer.keyword)}
+</div?
+`;
+console.log(markup);
+
+document.body.innerHTML=markup;
+
+</script>
+</body>
+</html>
